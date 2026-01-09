@@ -1,0 +1,23 @@
+// Customized behavior definitions
+// https://zmk.dev/docs/keymaps/behaviors
+#pragma once
+
+#include <behaviors.dtsi>
+
+/ {
+  behaviors {
+    kt_off: key_toggle_off {
+      compatible = "zmk,behavior-key-toggle";
+      #binding-cells = <1>;
+      display-name = "Key Toggle Off";
+      toggle-mode = "off";
+    };
+
+    tog_off: layer_toggle_off {
+      compatible = "zmk,behavior-toggle-layer";
+      #binding-cells = <1>;
+      display-name = "Layer Toggle Off";
+      toggle-mode = "off";
+    };
+  };
+};
