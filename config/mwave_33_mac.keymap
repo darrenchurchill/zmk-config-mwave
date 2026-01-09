@@ -26,20 +26,9 @@
 };
 
 / {
+  // TODO: confirm the version macro from `get_version.sh` is getting defined
+  // when building on GitHub Actions
   #include "mwave_prim.dtsi"
-
-  behaviors {
-    // TODO: confirm the version macro from `get_version.sh` is getting defined
-    // when building on GitHub Actions
-    #include "version.dtsi"
-    #ifndef VERSION_MACRO
-    macro_ver: macro_ver {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&kp RET>;
-    };
-    #endif
-  };
 
   keymap {
     compatible = "zmk,keymap";
