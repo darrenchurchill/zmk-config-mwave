@@ -52,21 +52,21 @@
     // NOTE: I saw someone have a good idea to use combos with BSPC to generate
     // macros, often ones that send strings. See this link:
     // https://github.com/precondition/dactyl-manuform-keymap
-    combo_caps_word_bspc_prefix {
-      timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT00 LH_B3>; // BSPC & C
-      bindings = <&caps_word>;
-    };
-    combo_meh_bspc_prefix {
-      timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT00 RH_H7>; // BSPC & M
-      bindings = <&sk LC(LS(LALT))>;
-    };
-    combo_hyper_bspc_prefix {
-      timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT00 RH_B6>; // BSPC & H
-      bindings = <&sk LC(LS(LA(LGUI)))>;
-    };
+    // combo_caps_word_bspc_prefix {
+    //   timeout-ms = <COMBO_TIMEOUT_MS>;
+    //   key-positions = <RT00 LH_B3>; // BSPC & C
+    //   bindings = <&caps_word>;
+    // };
+    // combo_meh_bspc_prefix {
+    //   timeout-ms = <COMBO_TIMEOUT_MS>;
+    //   key-positions = <RT00 RH_H7>; // BSPC & M
+    //   bindings = <&sk LC(LS(LALT))>;
+    // };
+    // combo_hyper_bspc_prefix {
+    //   timeout-ms = <COMBO_TIMEOUT_MS>;
+    //   key-positions = <RT00 RH_B6>; // BSPC & H
+    //   bindings = <&sk LC(LS(LA(LGUI)))>;
+    // };
 
     // Left Hand
     // Horizontal Combos
