@@ -39,74 +39,61 @@
     hands_down_neu {
       display-name = "Hands Down Neu";
       bindings = <
-        &kp ESC    &kp C_MUTE      &kp C_VOL_DN   &kp C_VOL_UP      &kp C_PREV      &kp C_PP          &kp C_NEXT          &bl BL_CYCLE   &kp F11        &kp LS(LC(LG(NUMBER_4)))  &kp LC(UP_ARROW)  &kp LG(SPACE)  &bth 0 0    &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp K_POWER  &to 1
-        &kp GRAVE  &kp N1          &kp N2         &kp N3            &kp N4          &kp N5            &kp N6              &kp N7         &kp N8         &kp N9                    &kp N0            &kp MINUS      &kp EQUAL   &kp BSPC
-        &kp TAB    &llt _FN W      &llt _MEDIA F  &llt_qas HT_NO M  &llt _NAV P     &kp V             &kp COMMA           &kp DOT        &kp Q          &kp DQT                   &rlt _FN SQT      &kp Z          &kp SLASH   &kp SEMI        &kp DEL
-        &kp ESC    &lmt_c LCTRL R  &llt _NUM S    &llt _SYM N       &lmt_g LGUI T   &kp B             &kp BSPC            &rmt_g RGUI A  &rlt _SYM E    &rlt _NUM I               &rmt RCTRL H      &kp J          &kp RET     &kp PG_UP
-        &sk LSHFT  &lmt LGUI X     &lmt LALT C    &lmt LSHFT L      &lmt_c LCTRL D  &kp G             &kp MINUS           &rmt RCTRL U   &rmt RSHFT O   &rmt RALT Y               &rmt RGUI K       &sk RSHFT      &kp UP      &kp PG_DN
-        &kp LCTRL  &kp LEFT_ALT    &kp LEFT_GUI                                     &lt_mt LSHFT ESC  &rt_lt _ARRW SPACE                 &kp RIGHT_GUI  &kp RIGHT_ALT             &kp RCTRL         &kp LEFT       &kp DOWN    &kp RIGHT
+        &kp ESC    &kp C_MUTE      &kp C_VOL_DN   &kp C_VOL_UP      &kp C_PREV      &kp C_PP          &kp C_NEXT  &bl BL_CYCLE        &kp F11        &kp LS(LC(LG(NUMBER_4)))  &kp LC(UP_ARROW)  &kp LG(SPACE)  &bth 0 0   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp K_POWER  &to 1
+        &kp GRAVE  &kp N1          &kp N2         &kp N3            &kp N4          &kp N5            &kp N6      &kp N7              &kp N8         &kp N9                    &kp N0            &kp MINUS      &kp EQUAL  &kp BSPC
+        &kp TAB    &llt _FN W      &llt _MEDIA F  &llt_qas HT_NO M  &llt _NAV P     &kp V                         &kp COMMA           &kp DOT        &kp Q                     &kp DQT           &rlt _FN SQT   &kp Z      &kp SLASH       &kp SEMI         &kp DEL
+        &kp ESC    &lmt_c LCTRL R  &llt _NUM S    &llt _SYM N       &lmt_g LGUI T   &kp B                         &kp BSPC            &rmt_g RGUI A  &rlt _SYM E               &rlt _NUM I       &rmt RCTRL H   &kp J      &kp RET         &kp PG_UP
+        &sk LSHFT  &lmt LGUI X     &lmt LALT C    &lmt LSHFT L      &lmt_c LCTRL D  &kp G                         &kp MINUS           &rmt RCTRL U   &rmt RSHFT O              &rmt RALT Y       &rmt RGUI K    &sk RSHFT  &kp UP          &kp PG_DN
+        &kp LCTRL  &kp LEFT_ALT    &kp LEFT_GUI                                     &lt_mt LSHFT ESC              &rt_lt _ARRW SPACE                 &kp RIGHT_GUI             &kp RIGHT_ALT     &kp RCTRL      &kp LEFT   &kp DOWN        &kp RIGHT
       >;
     };
 
+    // TODO: finish realigning the remaining layers below to match the columns above
     fn_numpad {
       display-name = "Fn Numpad";
       bindings = <
-        &bootloader     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6     &kp F7     &kp F8       &kp F9         &kp F10          &kp F11  &kp F12  &kp HOME  &kp END  &kp K_POWER  &to 0
-        &trans          &trans  &trans  &trans  &trans  &trans  &trans     &trans     &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans   &trans   &trans
-        &trans          &trans  &trans  &trans  &trans  &trans  &trans     &kp KP_N7  &kp KP_N8    &kp KP_N9      &kp KP_MINUS     &trans   &trans   &trans    &trans
-        &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans     &kp KP_N4  &kp KP_N5    &kp KP_N6      &kp KP_PLUS      &trans   &trans   &trans
-        &trans          &trans  &trans  &trans  &trans  &trans  &trans     &kp KP_N1  &kp KP_N2    &kp KP_N3      &kp KP_ENTER     &trans   &trans   &trans
-        &trans          &trans  &trans                  &trans  &kp KP_N0             &trans       &kp KP_DOT     &trans           &trans   &trans   &trans
+        &bootloader     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7     &kp F8       &kp F9         &kp F10          &kp F11       &kp F12  &kp HOME  &kp END  &kp K_POWER  &to 0
+        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp KP_NLCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans        &trans   &trans
+        &trans          &trans  &trans  &trans  &trans  &trans          &trans     &kp KP_N7    &kp KP_N8      &kp KP_N9        &kp KP_MINUS  &trans   &trans    &trans    &trans
+        &studio_unlock  &trans  &trans  &trans  &trans  &trans          &trans     &kp KP_N4    &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &trans   &trans    &trans
+        &trans          &trans  &trans  &trans  &trans  &trans          &trans     &kp KP_N1    &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &trans   &trans    &trans
+        &trans          &trans  &trans                  &trans          &kp KP_N0               &trans         &kp KP_DOT       &trans        &trans   &trans    &trans
       >;
     };
 
     qwerty {
       display-name = "Qwerty";
       bindings = <
-        &trans  &trans        &trans         &trans            &trans        &trans  &trans  &trans        &trans            &trans         &trans           &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans        &trans         &trans            &trans        &trans  &trans  &trans        &trans            &trans         &trans           &trans  &trans  &trans
-        &trans  &kp Q         &llt _MEDIA W  &llt_qas HT_NO E  &llt _NAV R   &kp T   &kp Y   &kp U         &kp I             &kp  O         &kp P            &trans  &trans  &trans  &trans
-        &trans  &lmt LCTRL A  &llt _NUM S    &llt _SYM D       &lmt LGUI F   &kp G   &kp H   &rmt RGUI J   &rlt _SYM K       &rlt _NUM L    &rmt RCTRL SEMI  &trans  &trans  &trans
-        &trans  &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C      &lmt LCTRL V  &kp B   &kp N   &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans  &trans  &trans
-        &trans  &trans        &trans                                         &trans  &trans                &trans            &trans         &trans           &trans  &trans  &trans
-
-        /* LH */
-        &trans  &trans        &trans         &trans            &trans        &trans  &trans
-        &trans  &kp Q         &llt _MEDIA W  &llt_qas HT_NO E  &llt _NAV R   &kp T   &trans
-        &trans  &lmt LCTRL A  &llt _NUM S    &llt _SYM D       &lmt LGUI F   &kp G   &trans  &trans  &trans
-        &trans  &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C      &lmt LCTRL V  &kp B                   &trans
-        &trans  &trans        &trans         &trans            &trans                &trans  &trans  &trans
-
-        /* RH */
-                        &trans  &trans  &trans        &trans            &trans         &trans           &trans
-                        &trans  &kp Y   &kp U         &kp I             &kp  O         &kp P            &trans
-        &trans  &trans  &trans  &kp H   &rmt RGUI J   &rlt _SYM K       &rlt _NUM L    &rmt RCTRL SEMI  &trans
-        &trans                  &kp N   &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans
-        &trans  &trans  &trans          &trans        &trans            &trans         &trans           &trans
+        &trans  &trans        &trans         &trans            &trans        &trans  &trans  &trans  &trans        &trans            &trans         &trans           &trans  &trans  &trans  &trans  &trans
+        &trans  &trans        &trans         &trans            &trans        &trans  &trans  &trans  &trans        &trans            &trans         &trans           &trans  &trans
+        &trans  &kp Q         &llt _MEDIA W  &llt_qas HT_NO E  &llt _NAV R   &kp T           &kp Y   &kp U         &kp I             &kp  O         &kp P            &trans  &trans  &trans  &trans
+        &trans  &lmt LCTRL A  &llt _NUM S    &llt _SYM D       &lmt LGUI F   &kp G           &kp H   &rmt RGUI J   &rlt _SYM K       &rlt _NUM L    &rmt RCTRL SEMI  &trans  &trans  &trans
+        &trans  &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C      &lmt LCTRL V  &kp B           &kp N   &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans  &trans  &trans
+        &trans  &trans        &trans                                         &trans          &trans                &trans            &trans         &trans           &trans  &trans  &trans
       >;
     };
 
     sym {
       display-name = "Symbol";
       bindings = <
-        &trans  &trans    &trans           &trans     &trans           &trans    &trans    &trans     &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans    &trans           &trans     &trans           &trans    &trans    &trans     &trans    &trans    &trans     &trans  &trans  &trans
-        &trans  &trans    &kp LT           &kp GT     &kp SLASH        &kp N1    &kp COMMA &kp SEMI   &kp LBKT  &kp RBKT  &kp N0     &trans  &trans  &trans  &trans
-        &trans  &kp EXCL  &llt _NUM MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans  &trans  &trans
-        &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT    &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans  &trans  &trans
-        &trans  &trans    &trans                                       &trans    &trans               &trans    &trans    &trans     &trans  &trans  &trans
+        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans     &trans     &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans
+        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans     &trans     &trans    &trans    &trans     &trans  &trans
+        &trans  &trans    &kp LT           &kp GT     &kp SLASH        &kp N1            &kp COMMA  &kp SEMI   &kp LBKT  &kp RBKT  &kp N0     &trans  &trans  &trans  &trans
+        &trans  &kp EXCL  &llt _NUM MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH          &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans  &trans  &trans
+        &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT            &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans  &trans  &trans
+        &trans  &trans    &trans                                       &trans            &trans                &trans    &trans    &trans     &trans  &trans  &trans
       >;
     };
 
     num {
       display-name = "Number";
       bindings = <
-        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans
-        &trans  &trans    &kp LT           &kp GT     &kp SLASH        &trans    &trans  &kp N8  &kp N9  &kp N4  &trans   &trans  &trans  &trans  &trans
-        &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &trans  &trans  &trans
-        &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT    &trans  &kp N7  &kp N6  &kp N5  &trans   &trans  &trans  &trans
-        &trans  &trans    &trans                                       &trans    &trans          &trans  &trans  &trans   &trans  &trans  &trans
+        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+        &trans  &trans    &trans           &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans
+        &trans  &trans    &kp LT           &kp GT     &kp SLASH        &trans            &trans  &kp N8  &kp N9  &kp N4  &trans   &trans  &trans  &trans  &trans
+        &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH          &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &trans  &trans  &trans
+        &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT            &trans  &kp N7  &kp N6  &kp N5  &trans   &trans  &trans  &trans
+        &trans  &trans    &trans                                       &trans            &trans          &trans  &trans  &trans   &trans  &trans  &trans
       >;
     };
 
@@ -115,12 +102,12 @@
     nav {
       display-name = "Navigation";
       bindings = <
-        &trans  &trans     &trans     &trans     &trans            &trans                &trans    &trans            &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans     &trans     &trans     &trans            &trans                &trans    &trans            &trans            &trans          &trans         &trans  &trans  &trans
-        &trans  &trans     &trans     &trans     &trans            &trans                &kp HOME  &kp PG_DN         &kp PG_UP         &kp END         &kp LG(GRAVE)  &trans  &trans  &trans  &trans
-        &trans  &trans     &trans     &trans     &m_alt_tab_start  &trans                &kp LEFT  &kp DOWN          &kp UP            &kp RIGHT       &kp RC(GRAVE)  &trans  &trans  &trans
-        &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)         &trans                &trans    &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp LC(LEFT)    &kp LC(RIGHT)  &trans  &trans  &trans
-        &trans  &trans     &trans                                  &lt_mt LSHFT LS(ESC)  &trans                      &trans            &trans          &trans         &trans  &trans  &trans
+        &trans  &trans     &trans     &trans     &trans            &trans                &trans  &trans    &trans            &trans            &trans        &trans         &trans  &trans  &trans  &trans  &trans
+        &trans  &trans     &trans     &trans     &trans            &trans                &trans  &trans    &trans            &trans            &trans        &trans         &trans  &trans
+        &trans  &trans     &trans     &trans     &trans            &trans                        &kp HOME  &kp PG_DN         &kp PG_UP         &kp END       &kp LG(GRAVE)  &trans  &trans  &trans  &trans
+        &trans  &trans     &trans     &trans     &m_alt_tab_start  &trans                        &kp LEFT  &kp DOWN          &kp UP            &kp RIGHT     &kp RC(GRAVE)  &trans  &trans  &trans
+        &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)         &trans                        &trans    &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &trans
+        &trans  &trans     &trans                                  &lt_mt LSHFT LS(ESC)          &trans                      &trans            &trans        &trans         &trans  &trans  &trans
       >;
     };
 
@@ -129,22 +116,22 @@
       bindings = <
         &trans  &trans  &trans          &trans    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans          &trans    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans          &trans    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &m_alt_tab_end  &kp LEFT  &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans          &trans    &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans                             &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans          &trans    &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &m_alt_tab_end  &kp LEFT  &kp TAB  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans          &trans    &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans                             &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
       >;
     };
 
     media {
       display-name = "Media";
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_PP  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp C_MUTE    &trans        &trans      &trans    &trans  &trans
-        &trans  &trans  &trans                  &trans  &trans              &trans        &trans        &trans      &trans    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_PP  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans        &trans        &trans      &trans    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &kp C_MUTE    &trans        &trans      &trans    &trans  &trans
+        &trans  &trans  &trans                  &trans          &trans              &trans        &trans        &trans      &trans    &trans  &trans
       >;
     };
 
@@ -152,36 +139,36 @@
     fn {
       display-name = "Function";
       bindings = <
-        &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans
-        &trans  &kp F19  &kp F18  &kp F17  &kp F16  &kp F15  &kp F15  &kp F8  &kp F9  &kp F4  &kp F10  &trans  &trans  &trans  &trans
-        &trans  &kp F24  &kp F23  &kp F22  &kp F21  &kp F20  &kp F14  &kp F1  &kp F2  &kp F3  &kp F11  &trans  &trans  &trans
-        &trans  &trans   &trans   &trans   &trans   &trans   &kp F13  &kp F7  &kp F6  &kp F5  &kp F12  &trans  &trans  &trans
-        &trans  &trans   &trans                     &trans   &trans           &trans  &trans  &trans   &trans  &trans  &trans
+        &trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans
+        &trans  &kp F19  &kp F18  &kp F17  &kp F16  &kp F15          &kp F15  &kp F8  &kp F9  &kp F4  &kp F10  &trans  &trans  &trans  &trans
+        &trans  &kp F24  &kp F23  &kp F22  &kp F21  &kp F20          &kp F14  &kp F1  &kp F2  &kp F3  &kp F11  &trans  &trans  &trans
+        &trans  &trans   &trans   &trans   &trans   &trans           &kp F13  &kp F7  &kp F6  &kp F5  &kp F12  &trans  &trans  &trans
+        &trans  &trans   &trans                     &trans           &trans           &trans  &trans  &trans   &trans  &trans  &trans
       >;
     };
 
     arrw {
       display-name = "Arrow";
       bindings = <
-        &trans  &trans     &trans     &trans    &trans     &trans                &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans     &trans     &trans    &trans     &trans                &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans
-        &trans  &trans     &trans     &trans    &trans     &trans                &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans
-        &trans  &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT  &trans                &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans
-        &trans  &trans     &trans     &kp BSPC  &kp DEL    &trans                &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans
-        &trans  &trans     &trans                          &lt_mt LSHFT LS(ESC)  &trans            &trans    &trans  &trans     &trans  &trans  &trans
+        &trans  &trans     &trans     &trans    &trans     &trans                &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans
+        &trans  &trans     &trans     &trans    &trans     &trans                &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
+        &trans  &trans     &trans     &trans    &trans     &trans                        &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans
+        &trans  &kp PG_UP  &kp PG_DN  &kp LEFT  &kp RIGHT  &trans                        &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans
+        &trans  &trans     &trans     &kp BSPC  &kp DEL    &trans                        &trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans
+        &trans  &trans     &trans                          &lt_mt LSHFT LS(ESC)          &trans            &trans    &trans  &trans     &trans  &trans  &trans
       >;
     };
 
     tap_only {
       display-name = "Tap Only";
       bindings = <
-        &tog _TAP_ONLY  &trans  &trans  &trans  &trans  &trans     &trans      &trans   &trans  &trans   &trans   &trans  &trans     &trans  &trans  &trans  &trans
-        &trans          &trans  &trans  &trans  &trans  &trans     &trans      &trans   &trans  &trans   &trans   &trans  &trans     &trans
-        &kp TAB         &kp W   &kp F   &kp M   &kp P   &kp V      &kp COMMA   &kp DOT  &kp Q   &kp DQT  &kp SQT  &kp Z   &kp SLASH  &trans  &trans
-        &kp ESC         &kp R   &kp S   &kp N   &kp T   &kp B      &kp BSPC    &kp A    &kp E   &kp I    &kp H    &kp J   &kp ENTER  &trans
-        &trans          &kp X   &kp C   &kp L   &kp D   &kp G      &kp MINUS   &kp U    &kp O   &kp Y    &kp K    &trans  &trans     &trans
-        &trans          &trans  &trans                  &kp LSHFT  &kp SPACE            &trans  &trans   &trans   &trans  &trans     &trans
+        &tog _TAP_ONLY  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans   &trans  &trans   &trans   &trans  &trans     &trans  &trans  &trans
+        &trans          &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans   &trans  &trans   &trans   &trans  &trans
+        &kp TAB         &kp W   &kp F   &kp M   &kp P   &kp V              &kp COMMA  &kp DOT  &kp Q   &kp DQT  &kp SQT  &kp Z   &kp SLASH  &trans  &trans
+        &kp ESC         &kp R   &kp S   &kp N   &kp T   &kp B              &kp BSPC   &kp A    &kp E   &kp I    &kp H    &kp J   &kp ENTER  &trans
+        &trans          &kp X   &kp C   &kp L   &kp D   &kp G              &kp MINUS  &kp U    &kp O   &kp Y    &kp K    &trans  &trans     &trans
+        &trans          &trans  &trans                  &kp LSHFT          &kp SPACE           &trans  &trans   &trans   &trans  &trans     &trans
       >;
     };
 
@@ -190,10 +177,10 @@
       bindings = <
         &none      &none        &none  &none  &none  &none       &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
         &none      &none        &none  &none  &none  &none       &none  &none  &none  &none  &none  &none  &none  &none
-        &none      &bootloader  &none  &none  &none  &macro_ver  &none  &none  &none  &none  &none  &none  &none  &none  &none
-        &tog _ZMK  &none        &none  &none  &none  &none       &none  &none  &none  &none  &none  &none  &none  &none
-        &none      &sys_reset   &none  &none  &none  &none       &none  &none  &none  &none  &none  &none  &none  &none
-        &none      &none        &none                &tog _ZMK   &none         &none  &none  &none  &none  &none  &none
+        &none      &bootloader  &none  &none  &none  &macro_ver         &none  &none  &none  &none  &none  &none  &none  &none  &none
+        &tog _ZMK  &none        &none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &none
+        &none      &sys_reset   &none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &none
+        &none      &none        &none                &tog _ZMK          &none         &none  &none  &none  &none  &none  &none
       >;
     };
 
@@ -202,22 +189,22 @@
       bindings = <
         &to 0  &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
         &to 0  &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to _LEAD_L  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0                      &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0        &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0        &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to _LEAD_L  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0                      &to 0         &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
       >;
     };
 
     lead_l {
       display-name = "Leader-L";
       bindings = <
-        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to _QWERTY  &to 0  &to 0                &to 0  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0  &to _TAP_ONLY  &to 0  &to 0  &to 0  &to 0        &to 0  &to _HANDS_DOWN_NEU  &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0  &to 0
-        &to 0  &to 0  &to 0                        &to 0  &to 0         &to 0        &to 0  &to 0                &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0         &to 0  &to 0  &to _QWERTY  &to 0  &to 0                &to 0  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0  &to _TAP_ONLY  &to 0         &to 0  &to 0  &to 0        &to 0  &to _HANDS_DOWN_NEU  &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0  &to 0  &to 0          &to 0         &to 0  &to 0  &to 0        &to 0  &to 0                &to 0  &to 0  &to 0
+        &to 0  &to 0  &to 0                        &to 0         &to 0         &to 0        &to 0  &to 0                &to 0  &to 0  &to 0
       >;
     };
 
@@ -256,10 +243,10 @@
     //   bindings = <
     //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
     //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
-    //     &to 0  &to 0  &to 0                &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     &to 0  &to 0  &to 0  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     &to 0  &to 0  &to 0                &to 0         &to 0         &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
     //   >;
     // };
 
@@ -268,10 +255,10 @@
     //   bindings = <
     //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
     //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    //     &trans  &trans  &trans                  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+    //     &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    //     &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    //     &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    //     &trans  &trans  &trans                  &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
     //   >;
     // };
     };
