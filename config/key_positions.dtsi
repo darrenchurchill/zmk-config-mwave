@@ -1,156 +1,172 @@
 // Key Position Definitions
 #pragma once
 
+// Full Layout Key Position Index Reference
+// https://github.com/KinesisCorporation/MWave-zephyr-module/blob/main/boards/arm/mwave/mwave_transform.dtsi
+// 0  1  2  3  4  5  6     7  8  9  10 11 12 13 14 15 16
+// 17 18 19 20 21 22 23    24 25 26 27 28 29 30
+// 31 32 33 34 35 36       37 38 39 40 41 42 43 44 45
+// 46 47 48 49 50 51       52 53 54 55 56 57 58 59
+// 60 61 62 63 64 65       66 67 68 69 70 71 72 73
+// 74 75 76       77       78    79 80 81 82 83 84
+
 // Left Hand
 // Numbered Top to Bottom, Left to Right (Outside to Inside)
-// Row 1
-#define LH00 0
-#define LH01 1
-#define LH02 2
-#define LH03 3
-#define LH04 4
-#define LH05 5
-#define LH06 6
-// Row 2
-#define LH10 7
-#define LH11 8
-#define LH12 9
-#define LH13 10
-#define LH14 11
-#define LH15 12
-#define LH16 13
-// Row 3
-#define LH20 14
-#define LH21 15
-#define LH22 16
-#define LH23 17
-#define LH24 18
-#define LH25 19
-#define LH26 20
-// Row 4
-#define LH30 23
-#define LH31 24
-#define LH32 25
-#define LH33 26
-#define LH34 27
-#define LH35 28
-// Row 5
-#define LH40 30
-#define LH41 31
-#define LH42 32
-#define LH43 33
-#define LH44 34
+// Row 1: Fn Row
+#define LH_F0 0
+#define LH_F1 1
+#define LH_F2 2
+#define LH_F3 3
+#define LH_F4 4
+#define LH_F5 5
+#define LH_F6 6
+// Row 2: Number Row
+#define LH_N0 17
+#define LH_N1 18
+#define LH_N2 19
+#define LH_N3 20
+#define LH_N4 21
+#define LH_N5 22
+#define LH_N6 23
+// Row 3: Top Row
+#define LH_T0 31
+#define LH_T1 32
+#define LH_T2 33
+#define LH_T3 34
+#define LH_T4 35
+#define LH_T5 36
+// Row 4: Home Row
+#define LH_H0 46
+#define LH_H1 47
+#define LH_H2 48
+#define LH_H3 49
+#define LH_H4 50
+#define LH_H5 51
+// Row 5: Bottom Row
+#define LH_B0 60
+#define LH_B1 61
+#define LH_B2 62
+#define LH_B3 63
+#define LH_B4 64
+#define LH_B5 65
+// Row 6: Modifier Row
+#define LH_M0 74
+#define LH_M1 75
+#define LH_M2 76
 // Thumbs
 // Row 1
-#define LT00 21
-#define LT01 22
-// Row 2
-#define LT10 29
-// Row 3
-#define LT20 35
-#define LT21 36
-#define LT22 37
+#define LT00 77
 
 // Right Hand
 // Numbered Top to Bottom, Right to Left (Outside to Inside)
-// Row 1
-#define RH00 44
-#define RH01 43
-#define RH02 42
-#define RH03 41
-#define RH04 40
-#define RH05 39
-#define RH06 38
-// Row 2
-#define RH10 51
-#define RH11 50
-#define RH12 49
-#define RH13 48
-#define RH14 47
-#define RH15 46
-#define RH16 45
-// Row 3
-#define RH20 60
-#define RH21 59
-#define RH22 58
-#define RH23 57
-#define RH24 56
-#define RH25 55
-#define RH26 54
-// Row 4
-#define RH30 67
-#define RH31 66
-#define RH32 65
-#define RH33 64
-#define RH34 63
-#define RH35 62
-// Row 5
-#define RH40 75
-#define RH41 74
-#define RH42 73
-#define RH43 72
-#define RH44 71
+// Row 1: Fn Row
+#define RH_F0 16
+#define RH_F1 15
+#define RH_F2 14
+#define RH_F3 13
+#define RH_F4 12
+#define RH_F5 11
+#define RH_F6 10
+#define RH_F7  9
+#define RH_F8  8
+#define RH_F9  7
+// Row 2: Number Row
+#define RH_N0 30
+#define RH_N1 29
+#define RH_N2 28
+#define RH_N3 27
+#define RH_N4 26
+#define RH_N5 25
+#define RH_N6 24
+// Row 3: Top Row
+#define RH_T0 45
+#define RH_T1 44
+#define RH_T2 43
+#define RH_T3 42
+#define RH_T4 41
+#define RH_T5 40
+#define RH_T6 39
+#define RH_T7 38
+#define RH_T8 37
+// Row 4: Home Row
+#define RH_H0 59
+#define RH_H1 58
+#define RH_H2 57
+#define RH_H3 56
+#define RH_H4 55
+#define RH_H5 54
+#define RH_H6 53
+#define RH_H7 52
+// Row 5: Bottom Row
+#define RH_B0 73
+#define RH_B1 72
+#define RH_B2 71
+#define RH_B3 70
+#define RH_B4 69
+#define RH_B5 68
+#define RH_B6 67
+#define RH_B7 66
+// Row 6: Modifier Row
+#define RH_M0 84
+#define RH_M1 83
+#define RH_M2 82
+#define RH_M3 81
+#define RH_M4 80
+#define RH_M5 79
 // Thumbs
 // Row 1
-#define RT00 53
-#define RT01 52
-// Row 2
-#define RT10 61
-// Row 3
-#define RT20 70
-#define RT21 69
-#define RT22 68
+#define RT00 78
 
 // Grouped Definitions
-#define KEYS_L  LH00 LH01 LH02 LH03 LH04 LH05 LH06 \
-                LH10 LH11 LH12 LH13 LH14 LH15 LH16 \
-                LH20 LH21 LH22 LH23 LH24 LH25 LH26 \
-                LH30 LH31 LH32 LH33 LH34 LH35      \
-                LH40 LH41 LH42 LH43 LH44
+#define KEYS_L  LH_F0 LH_F1 LH_F2 LH_F3 LH_F4 LH_F5 LH_F6 \
+                LH_N0 LH_N1 LH_N2 LH_N3 LH_N4 LH_N5 LH_N6 \
+                LH_T0 LH_T1 LH_T2 LH_T3 LH_T4 LH_T5       \
+                LH_H0 LH_H1 LH_H2 LH_H3 LH_H4 LH_H5       \
+                LH_B0 LH_B1 LH_B2 LH_B3 LH_B4 LH_B5       \
+                LH_M0 LH_M1 LH_M2
 
 // For use with rmt_gui's hold-trigger-key-positions
-// Homerow GUI hold-tap is on the Colemak N position
-// "NR" is a common bigram
-// CMD-R is a common shortcut that is annoying to accidentally trigger in the
-// web browser.
-// Remove Colemak R position
-#define KEYS_L_GUI_SAFE  LH00 LH01 LH02 LH03 LH04 LH05 LH06 \
-                         LH10 LH11 LH12 LH13 LH14 LH15 LH16 \
-                         LH20 LH21      LH23 LH24 LH25 LH26 \
-                         LH30 LH31 LH32 LH33 LH34 LH35      \
-                         LH40 LH41 LH42 LH43 LH44
+// Homerow GUI hold-tap is on the Hands Down Neu A position
+// "AR", "AN", "AT" are common bigrams
+// CMD-R, CMD-N, and CMD-T are common shortcuts that are annoying to
+// accidentally trigger. CMD-R is especially annoying to accidentally trigger in
+// a web browser.
+// Remove Hands Down Neu R, N, and T positions
+#define KEYS_L_GUI_SAFE  LH_F0 LH_F1 LH_F2 LH_F3 LH_F4 LH_F5 LH_F6 \
+                         LH_N0 LH_N1 LH_N2 LH_N3 LH_N4 LH_N5 LH_N6 \
+                         LH_T0 LH_T1 LH_T2 LH_T3 LH_T4 LH_T5       \
+                         LH_H0                         LH_H5       \
+                         LH_B0 LH_B1 LH_B2 LH_B3 LH_B4 LH_B5       \
+                         LH_M0 LH_M1 LH_M2
 
-#define THUMBS_LEFT       LT00 LT01 \
-                               LT10 \
-                     LT20 LT21 LT22
+#define THUMBS_LEFT  LT00
 
-#define KEYS_R  RH06 RH05 RH04 RH03 RH02 RH01 RH00 \
-                RH16 RH15 RH14 RH13 RH12 RH11 RH10 \
-                RH26 RH25 RH24 RH23 RH22 RH21 RH20 \
-                     RH35 RH34 RH33 RH32 RH31 RH30 \
-                          RH44 RH43 RH42 RH41 RH40
+#define KEYS_R  RH_F9 RH_F8 RH_F7 RH_F6 RH_F5 RH_F4 RH_F3 RH_F2 RH_F1 RH_F0 \
+                RH_N6 RH_N5 RH_N4 RH_N3 RH_N2 RH_N1 RH_N0                   \
+                RH_T8 RH_T7 RH_T6 RH_T5 RH_T4 RH_T3 RH_T2 RH_T1 RH_T0       \
+                RH_H7 RH_H6 RH_H5 RH_H4 RH_H3 RH_H2 RH_H1 RH_H0             \
+                RH_B7 RH_B6 RH_B5 RH_B4 RH_B3 RH_B2 RH_B1 RH_B0             \
+                            RH_M5 RH_M4 RH_M3 RH_M2 RH_M1 RH_M0
 
 // For use with lmt_gui's hold-trigger-key-positions
-// Homerow GUI hold-tap is on the Colemak T position
+// Homerow GUI hold-tap is on the Hands Down Neu T position
 // "TH" & "TO" are common bigrams
 // CMD-H & CMD-O are common shortcuts that are annoying to accidentally trigger
-// Remove Colemak H, & O positions
-#define KEYS_R_GUI_SAFE  RH06 RH05 RH04 RH03 RH02 RH01 RH00 \
-                         RH16 RH15 RH14 RH13 RH12 RH11 RH10 \
-                         RH26      RH24 RH23 RH22      RH20 \
-                              RH35 RH34 RH33 RH32 RH31 RH30 \
-                                   RH44 RH43 RH42 RH41 RH40
+// Remove Hands Down Neu H, & O positions
+#define KEYS_R_GUI_SAFE  RH_F9 RH_F8 RH_F7 RH_F6 RH_F5 RH_F4 RH_F3 RH_F2 RH_F1 RH_F0 \
+                         RH_N6 RH_N5 RH_N4 RH_N3 RH_N2 RH_N1 RH_N0                   \
+                         RH_T8 RH_T7 RH_T6 RH_T5 RH_T4 RH_T3 RH_T2 RH_T1 RH_T0       \
+                         RH_H7 RH_H6 RH_H5 RH_H4       RH_H2 RH_H1 RH_H0             \
+                         RH_B7 RH_B6       RH_B4 RH_B3 RH_B2 RH_B1 RH_B0             \
+                                     RH_M5 RH_M4 RH_M3 RH_M2 RH_M1 RH_M0
 
-#define THUMBS_RIGHT  RT01 RT00 \
-                      RT10 \
-                      RT22 RT21 RT20
+#define THUMBS_RIGHT  RT00
 
+// TODO: Remove this once you've confirmed Hands Down Neu works ok
 // For use with lmt_ctrl's hold-trigger-key-positions
 // Homerow CTRL hold-tap is on the Colemak A position
 // "A" is commonly rolled with "SPACE", which is the Mac shortcut to change
 // keyboard input sources (i.e. QWERTY to Colemak). This is annoying to
 // accidentally trigger.
 // Remove SPACE positions
-#define THUMBS_RIGHT_CTRL_SAFE  RT01 RT00 \
-                                RT10 \
-                                RT22      RT20
+#define THUMBS_RIGHT_CTRL_SAFE  RT00

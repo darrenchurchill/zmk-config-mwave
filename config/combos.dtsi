@@ -19,32 +19,32 @@
     // Both Hands
     combo_javascript {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH23 RH15>; // S & J (D & Y)
+      key-positions = <LH_H2 RH_H2>; // S & J (D & Y)
       bindings = <&m_js>;
     };
     combo_tog_num_layer {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <LH22 RH22>; // R & I (S & L)
+      key-positions = <LH_H2 RH_H4>; // R & I (S & L)
       bindings = <&tog _NUM>;
     };
     combo_tog_sym_layer {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <LH23 RH23>; // S & E (D & K)
+      key-positions = <LH_H3 RH_H5>; // S & E (D & K)
       bindings = <&tog _SYM>;
     };
     combo_caps_word {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <LH33 RH33>; // C & COMMA (C & COMMA)
+      key-positions = <LH_B3 RH_B5>; // C & COMMA (C & COMMA)
       bindings = <&caps_word>;
     };
     combo_tog_zmk_layer {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH31 RH34 RH23>; // Z, M, & K (Z, H, & E)
+      key-positions = <LH_B1 RH_B6 RH_H5>; // Z, M, & K (Z, H, & E)
       bindings = <&tog _ZMK>;
     };
     combo_toggle_qwerty {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH40 RH40>; // Bottom Left & Bottom Right Keys
+      key-positions = <LH_M0 RH_M0>; // Bottom Left & Bottom Right Keys
       bindings = <&tog _QWERTY>;
     };
 
@@ -54,17 +54,17 @@
     // https://github.com/precondition/dactyl-manuform-keymap
     combo_caps_word_bspc_prefix {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT21 LH33>; // BSPC & C
+      key-positions = <RT00 LH_B3>; // BSPC & C
       bindings = <&caps_word>;
     };
     combo_meh_bspc_prefix {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT21 RH25>; // BSPC & M
+      key-positions = <RT00 RH_H7>; // BSPC & M
       bindings = <&sk LC(LS(LALT))>;
     };
     combo_hyper_bspc_prefix {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RT21 RH34>; // BSPC & H
+      key-positions = <RT00 RH_B6>; // BSPC & H
       bindings = <&sk LC(LS(LA(LGUI)))>;
     };
 
@@ -73,63 +73,63 @@
     // Top Row
     combo_z {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH12 LH13>; // G & M
+      key-positions = <LH_T2 LH_T3>; // G & M
       bindings = <&kp Z>;
       layers  = <_HANDS_DOWN_NEU>;
     };
     combo_q {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH12 LH14>; // G & P
+      key-positions = <LH_T2 LH_T4>; // G & P
       bindings = <&kp Q>;
       layers  = <_HANDS_DOWN_NEU>;
     };
     combo_lh_delete {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH14 LH15>; // P & B (R & T)
+      key-positions = <LH_T4 LH_T5>; // P & B (R & T)
       bindings = <&kp DELETE>;
     };
     // Home Row
     combo_lh_meh {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH21 LH22 LH23>; // A, R, & S (A, S, & D)
+      key-positions = <LH_H1 LH_H2 LH_H3>; // A, R, & S (A, S, & D)
       bindings = <&sk LC(LS(LALT))>;
     };
     combo_lh_hyper {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH21 LH22 LH23 LH24>; // A, R, S, & T (A, S, D, & F)
+      key-positions = <LH_H1 LH_H2 LH_H3 LH_H4>; // A, R, S, & T (A, S, D, & F)
       bindings = <&sk LC(LS(LA(LGUI)))>;
     };
     // TODO: change these tab combos to just a tap-only combo => use TAB / LS(TAB)
     // for both &combo_ht args
     combo_lt_sym_tab {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <LH22 LH23>; // R & S (S & D)
+      key-positions = <LH_H2 LH_H3>; // R & S (S & D)
       require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
       bindings = <&combo_lt _SYM TAB>;
     };
     combo_lt_nav_esc {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <LH23 LH24>; // S & T (D & F)
+      key-positions = <LH_H3 LH_H4>; // S & T (D & F)
       require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
       slow-release;
       bindings = <&combo_lt _NAV ESC>;
     };
     combo_question {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH24 LH25>; // T & G (F & G)
+      key-positions = <LH_H4 LH_H5>; // T & G (F & G)
       bindings = <&kp QUESTION>;
     };
     // Bottom Row
     combo_triple_grave {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH32 LH33 LH34>; // X, C, & D (X, C, & V)
+      key-positions = <LH_B2 LH_B3 LH_B4>; // X, C, & D (X, C, & V)
       // https://zmk.dev/docs/behaviors/hold-tap#using-different-behavior-types-with-hold-taps
       // You need a dummy parameter here, see link above.
       bindings = <&combo_ht_m_trp_grave RA(RS(RCTRL)) 0>;
     };
     combo_grave {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH33 LH34>; // C & D (C & V)
+      key-positions = <LH_B3 LH_B4>; // C & D (C & V)
       bindings = <&combo_ht RS(RCTRL) GRAVE>;
     };
 
@@ -137,28 +137,28 @@
     // Top + Home Rows
     combo_larrow {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH13 LH23>; // F & S (E & D)
+      key-positions = <LH_T3 LH_H3>; // F & S (E & D)
       bindings = <&m_larrow>;
     };
     combo_lt_equal {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH14 LH24>; // P & T (R & F)
+      key-positions = <LH_T4 LH_H4>; // P & T (R & F)
       bindings = <&m_lt_equal>;
     };
     combo_lh_backspace {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH15 LH25>; // B & G (T & G)
+      key-positions = <LH_T5 LH_H5>; // B & G (T & G)
       bindings = <&kp BACKSPACE>;
     };
     // Home + Bottom Rows
     combo_gt_equal {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH24 LH34>; // T & D (F & V)
+      key-positions = <LH_H4 LH_B4>; // T & D (F & V)
       bindings = <&m_gt_equal>;
     };
     combo_leader_lh {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <LH25 LH35>; // G & V (G & B)
+      key-positions = <LH_H5 LH_B5>; // G & V (G & B)
       bindings = <&to _LEAD>;
     };
 
@@ -168,63 +168,63 @@
     // Top Row
     combo_rh_delete {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH15 RH14>; // J & L (Y & U)
+      key-positions = <RH_T8 RH_T7>; // J & L (Y & U)
       bindings = <&kp DELETE>;
     };
     combo_single_quote {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <RH14 RH13>; // L & U (U & I)
+      key-positions = <RH_T7 RH_T6>; // L & U (U & I)
       bindings = <&kp SINGLE_QUOTE>;
     };
     // Home Row
     combo_rh_meh {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH21 RH22 RH23>; // E, I, & O (K, L, & SEMI)
+      key-positions = <RH_H3 RH_H4 RH_H5>; // E, I, & O (K, L, & SEMI)
       bindings = <&sk LC(LS(LALT))>;
     };
     combo_rh_hyper {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH21 RH22 RH23 RH24>; // N, E, I, & O (J, K, L, & SEMI)
+      key-positions = <RH_H3 RH_H4 RH_H5 RH_H6>; // N, E, I, & O (J, K, L, & SEMI)
       bindings = <&sk LC(LS(LA(LGUI)))>;
     };
     combo_slash {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH25 RH24>; // M & N (H & J)
+      key-positions = <RH_H7 RH_H6>; // M & N (H & J)
       bindings = <&kp SLASH>;
     };
     combo_enter {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <RH24 RH23>; // N & E (J & K)
+      key-positions = <RH_H6 RH_H5>; // N & E (J & K)
       require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
       bindings = <&combo_ht RG(RSHFT) ENTER>;
     };
     combo_db_underscore {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH24 RH23 RH22>; // N, E, & I (J, K & L)
+      key-positions = <RH_H6 RH_H5 RH_H4>; // N, E, & I (J, K & L)
       // See note above regarding dummy parameter.
       bindings = <&combo_ht_m_db_under RG(RS(RALT)) 0>;
     };
     combo_underscore {
       timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-      key-positions = <RH23 RH22>; // E & I (K & L)
+      key-positions = <RH_H5 RH_H4>; // E & I (K & L)
       bindings = <&combo_ht RS(RALT) UNDERSCORE>;
       layers  = <_All_EXCEPT_SYM>; // all but _SYM, for fast () rolls
     };
     // Bottom Row
     combo_double_quote {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH34 RH33>; // H & COMMA (M & COMMA)
+      key-positions = <RH_B6 RH_B5>; // H & COMMA (M & COMMA)
       bindings = <&combo_ht RC(RSHFT) DOUBLE_QUOTES>;
     };
     combo_db_minus {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH34 RH33 RH32>; // H, COMMA, & DOT (M, COMMA, & DOT)
+      key-positions = <RH_B6 RH_B5 RH_B4>; // H, COMMA, & DOT (M, COMMA, & DOT)
       // See note above regarding dummy parameter.
       bindings = <&combo_ht_m_db_minus RC(RS(RALT)) 0>;
     };
     combo_minus {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH33 RH32>; // COMMA & DOT (COMMA & DOT)
+      key-positions = <RH_B5 RH_B4>; // COMMA & DOT (COMMA & DOT)
       bindings = <&combo_ht RS(RALT) MINUS>;
       layers  = <_All_EXCEPT_SYM>; // all but _SYM, for fast {} rolls
     };
@@ -233,33 +233,33 @@
     // Top + Home Rows
     combo_rh_backspace {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH15 RH25>; // J & M (Y & H)
+      key-positions = <RH_T8 RH_H7>; // J & M (Y & H)
       bindings = <&kp BACKSPACE>;
     };
     combo_db_rarrow {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH14 RH24>; // L & N (U & J)
+      key-positions = <RH_T7 RH_H6>; // L & N (U & J)
       bindings = <&m_db_rarrow>;
     };
     combo_rarrow {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH13 RH23>; // U & E (I & K)
+      key-positions = <RH_T6 RH_H5>; // U & E (I & K)
       bindings = <&m_rarrow>;
     };
     // Home + Bottom Rows
     combo_leader_rh {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH25 RH35>; // M & K (H & N)
+      key-positions = <RH_H7 RH_B7>; // M & K (H & N)
       bindings = <&to _LEAD>;
     };
     combo_caret {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH24 RH34>; // N & H (J & M)
+      key-positions = <RH_H6 RH_B6>; // N & H (J & M)
       bindings = <&kp CARET>;
     };
     combo_dollar {
       timeout-ms = <COMBO_TIMEOUT_MS>;
-      key-positions = <RH23 RH33>; // E & COMMA (K & COMMA)
+      key-positions = <RH_H5 RH_B5>; // E & COMMA (K & COMMA)
       bindings = <&kp DOLLAR>;
     };
   };
