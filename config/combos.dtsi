@@ -77,10 +77,17 @@
       bindings = <&kp Z>;
       layers  = <_HANDS_DOWN_NEU>;
     };
+    // TODO: decide which Q combo to keep
     combo_q {
       timeout-ms = <COMBO_TIMEOUT_MS>;
       key-positions = <LH_T2 LH_T4>; // G & P
       bindings = <&kp Q>;
+      layers  = <_HANDS_DOWN_NEU>;
+    };
+    combo_q_alt {
+      timeout-ms = <COMBO_TIMEOUT_MS>;
+      key-positions = <RH_B6 RH_B4>; // U & Y
+      bindings = <&combo_ht &m_qu Q>;
       layers  = <_HANDS_DOWN_NEU>;
     };
     combo_lh_delete {
@@ -215,6 +222,11 @@
       timeout-ms = <COMBO_TIMEOUT_MS>;
       key-positions = <RH_B6 RH_B5>; // H & COMMA (M & COMMA)
       bindings = <&combo_ht RC(RSHFT) DOUBLE_QUOTES>;
+    };
+    combo_qu_q {
+      timeout-ms = <COMBO_TIMEOUT_MS>;
+      key-positions = <RH_B6 RH_B4>; // U & Y (M & DOT)
+      bindings = <&combo_ht_m_qu 0 Q>;
     };
     combo_db_minus {
       timeout-ms = <COMBO_TIMEOUT_MS>;
