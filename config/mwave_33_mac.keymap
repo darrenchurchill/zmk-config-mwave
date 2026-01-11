@@ -43,7 +43,7 @@
         &kp GRAVE  &kp N1          &kp N2         &kp N3            &kp N4          &kp N5                        &kp N6      &kp N7              &kp N8         &kp N9                    &kp N0            &kp MINUS      &kp EQUAL  &kp BSPC
         &kp TAB    &llt _FN W      &llt _MEDIA F  &llt_qas HT_NO M  &llt _NAV P     &kp V                                     &kp COMMA           &kp DOT        &kp Q                     &kp DQT           &rlt _FN SQT   &kp Z      &kp SLASH       &kp SEMI         &kp DEL
         &kp ESC    &lmt_c LCTRL R  &llt _NUM S    &llt _SYM N       &lmt_g LGUI T   &kp B                                     &kp BSPC            &rmt_g RGUI A  &rlt _SYM E               &rlt _NUM I       &rmt RCTRL H   &kp J      &kp RET         &kp PG_UP
-        &sk LSHFT  &lmt LGUI X     &lmt LALT C    &lmt LSHFT L      &lmt_c LCTRL D  &kp G                                     &kp MINUS           &rmt RCTRL U   &rmt RSHFT O              &rmt RALT Y       &rmt RGUI K    &sk RSHFT  &kp UP          &kp PG_DN
+        &kp BSPC   &lmt LGUI X     &lmt LALT C    &lmt LSHFT L      &lmt_c LCTRL D  &kp G                                     &kp MINUS           &rmt RCTRL U   &rmt RSHFT O              &rmt RALT Y       &rmt RGUI K    &kp DEL    &kp UP          &kp PG_DN
         &kp LCTRL  &kp LEFT_ALT    &kp LEFT_GUI                                     &lt_lt_nav_alt_tab HT_NO TAB              &rt_lt _ARRW SPACE                 &kp RIGHT_GUI             &kp RIGHT_ALT     &kp RCTRL      &kp LEFT   &kp DOWN        &kp RIGHT
       >;
     };
