@@ -179,7 +179,7 @@
       bindings = <&kp>, <&kp>;
     };
 
-    lt_mt_hdg: left_thumb_mod_tap_hands_down_neu {
+    lt_mt_hd: left_thumb_mod_tap_hands_down {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <THUMB_TAPPING_TERM_MS>;

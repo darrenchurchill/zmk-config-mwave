@@ -75,20 +75,20 @@
       timeout-ms = <COMBO_TIMEOUT_MS>;
       key-positions = <LH_T2 LH_T3>; // G & M
       bindings = <&kp Z>;
-      layers  = <_HANDS_DOWN_NEU>;
+      layers  = <_HANDS_DOWN>;
     };
     // TODO: decide which Q combo to keep
     combo_q {
       timeout-ms = <COMBO_TIMEOUT_MS>;
       key-positions = <LH_T2 LH_T4>; // G & P
       bindings = <&kp Q>;
-      layers  = <_HANDS_DOWN_NEU>;
+      layers  = <_HANDS_DOWN>;
     };
     combo_q_alt {
       timeout-ms = <COMBO_TIMEOUT_MS>;
       key-positions = <RH_B6 RH_B4>; // U & Y
       bindings = <&combo_ht &m_qu Q>;
-      layers  = <_HANDS_DOWN_NEU>;
+      layers  = <_HANDS_DOWN>;
     };
     combo_lh_delete {
       timeout-ms = <COMBO_TIMEOUT_MS>;
